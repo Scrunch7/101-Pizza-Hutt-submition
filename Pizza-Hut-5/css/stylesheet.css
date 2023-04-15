@@ -1,0 +1,474 @@
+
+/*Header -----------------*/
+
+/*pizza hut logo*/
+.header {
+  background-color: white;
+  position: fixed;
+  padding: 10px;
+  top: 0%;
+  left: 0%;
+  width: 90%;
+}
+
+
+
+
+/*profile icon--------*/
+
+.profile {
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  right: 0%;
+  width: 10%;
+  padding: 2%;
+  
+}
+
+
+
+/*nav bar --------------------*/
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  margin: 0% auto;
+  padding: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+  
+li {
+  float: left;
+}
+  
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 150px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #DA2A1D;
+}
+  
+li:last-child {
+  border-right: none;
+}
+
+  /*sets clicked tabs to different colour*/
+.active {
+  background-color: #DA2A1D;
+}
+
+
+/*Body -----------------*/
+
+.body__index {
+  /* display: flex;
+  flex-direction: column; */
+  background: url('/images/PizzaBackground.webp') center center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  /* top: 0;
+  background-size: auto;
+  background-repeat: repeat-y; */
+}
+
+.background {
+  background-color: #cccccc; 
+  opacity: 50%;
+  height: 5px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.frontText {
+  background-color: #ccccccc7;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  padding: 2%;
+  top: 50%;
+}
+
+/*menu items------------*/
+
+
+.cards{
+  display: grid; 
+  grid-template-columns: 3fr 1fr; 
+  gap: 0px 0px; 
+  justify-content: center;
+  margin-top: 12%;
+  z-index: 1;
+}
+
+.menu_cards {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.904);
+  max-width: 250px;
+  margin: 1rem;
+  text-align: center;
+  font-family: arial;
+  position: inherit;
+  display: inline-block;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.cardh1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* cart */
+
+
+.cart{
+  position: fixed;
+  top: 24%;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.cart__content{
+  flex: 1;
+  overflow: auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 100%;
+
+}
+
+.cart__items{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  align-items: end;
+  gap: 0px 0px; 
+  width: 100%;
+}
+
+.cart__item{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  width: 100%;
+  margin: 1rem 0 0 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Arvo;
+}
+
+.item__remove{
+  outline: 0;
+  text-decoration: none;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid darkgrey;
+  background-color: grey;
+}
+
+.item__price {
+  margin: 0;
+}
+
+
+.total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1.5rem;
+  align-items: center;
+  border-top: 2px solid black;
+  padding-top: 0.5rem;
+}
+
+
+
+.total > p, .total__price {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: Arvo;
+}
+
+
+
+
+
+
+
+
+/*About us ---------------*/
+
+.logo {
+  background: grey;
+  width: 100%;
+  margin: 0%;
+  padding:0%;
+  margin: 1%;
+}
+
+.body {
+  background: grey;
+}
+
+.aboutFrontText {
+  background-color: white;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 2%;
+  top: 50%;
+}
+
+.footer-basic {
+  display: flex;
+  padding: 40px 0;
+  background-color: grey;
+  color: white;
+  flex-direction: column;
+}
+
+.footer-basic ul {
+  display: flex;
+  flex-direction: row;
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  border: none;
+  margin-bottom:0;
+  background: grey;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.listInlineItem a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+}
+
+  
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  margin: 0% auto;
+  padding: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color: white;
+  margin-bottom:0;
+}
+
+.listInline {
+  bottom: 2%;
+  position: relative;
+  border-right: 0px;
+  border: 0px;
+  display: inline-table;
+  list-style-type: none;
+  text-align: center;
+  margin: 0% auto;
+  padding: 0;
+  width: 100%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+  h3 {
+    font-size: 12px;
+  }
+  .frontText {
+    font-size: 8px;
+    margin-top: 25%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-basic {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+  li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 15px;
+
+  }
+
+  .footer-basic {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .frontText {
+    font-size: 8px;
+    margin-top: 40%;
+  }
+
+  .footer-basic ul {
+    flex-direction: column;
+}
+
+  
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .card {
+    background-color: lightblue;
+  }
+
+  .footer-basic {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
